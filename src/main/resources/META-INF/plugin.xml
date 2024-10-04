@@ -1,0 +1,54 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>it.d4n73.ASutils</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>ASutils</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="d.dante03@@gmail.com" url="https://www.yourcompany.com">D4n73</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description>Android studio and intellij utils fot text</description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+
+
+        <!-- Azione per codificare in Base64 -->
+        <action id="Base64EncodeAction" class="it.d4n73.asutils.Base64EncodeAction" text="Encode to Base64" description="Encodes selected text to Base64">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+
+        <!-- Azione per decodificare da Base64 -->
+        <action id="Base64DecodeAction" class="it.d4n73.asutils.Base64DecodeAction" text="Decode from Base64" description="Decodes selected text from Base64 to plain text">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+
+        <!-- Aggiungi l'azione per codificare come URL -->
+        <action id="it.d4n73.asutils.UrlEncodeAction" class="it.d4n73.asutils.UrlEncodeAction" text="Encode as URL" description="Encodes selected text as a URL">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+
+        <!-- Aggiungi l'azione per decodificare l'URL -->
+        <action id="it.d4n73.asutils.UrlDecodeAction" class="it.d4n73.asutils.UrlDecodeAction" text="Decode URL" description="Decode selected URL as text">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+
+    </actions>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+
+
+    </extensions>
+</idea-plugin>
