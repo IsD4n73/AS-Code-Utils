@@ -6,6 +6,7 @@ Conversione da base 64 a testo
 Conversione da testo a base 64
 Codifica URl utilizzando encodeURIComponent
 Decodifica URl utilizzando decodeURIComponent
+Creazione del testo lorem ipsum
 
 
 ## Utilizzo
