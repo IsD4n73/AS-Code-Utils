@@ -42,6 +42,11 @@
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
 
+        <!-- Azione per generare Lorem Ipsum -->
+        <action id="it.d4n73.asutils.GenerateLoremIpsumAction" class="it.d4n73.asutils.GenerateLoremIpsumAction" text="Generate Lorem Ipsum" description="Generate Lorem Ipsum text based on character count">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+
     </actions>
 
     <!-- Extension points defined by the plugin.
