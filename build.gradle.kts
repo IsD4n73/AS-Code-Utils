@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "it.d4n73"
-version = "1.0"
+version = "2.0"
 
 repositories {
     mavenCentral()
